@@ -12,26 +12,6 @@ html, body {
     text-decoration: none;
     color: #cfb025;
   }
-  
- 
-  .justify { 
-    text-align: justify; 
-  }
-  
-  .accordion-button:not(.collapsed) {
-    color: #cfb025;
-    background-color: black;
-  }
-  
-  .img-small {
-    padding-top: 0;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-  
-    width: 100px;
-    height: 100px;
-  }
 
   hr {
     height:5px;
@@ -39,36 +19,27 @@ html, body {
     background-color:#cfb025;
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
   
-  img {
-    max-width: 100%;
-    max-height:100%;
-  }
-  
-  .text-main {
-    font-size: 20px;
-    padding-left: 150px;
-  }
-
-  .text {
-    font-size: 20px;
-    padding-left: 75px;
-  }
-
-  .display-2 {
-    font-size: calc(1.575rem + 3.9vw);
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-  .responsive {
-    width: 100%;
-    height: auto;
 }
  
 
