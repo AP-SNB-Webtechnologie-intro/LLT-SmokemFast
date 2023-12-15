@@ -22,8 +22,20 @@
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- eigen geschreven js voor de recepten -->
-  <script defer src="js/script-recepten.js"></script>
+
+
+      <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+
+  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+  <link rel="stylesheet" href="css/mapStyle.css">
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script defer src="js/mapScript.js"></script>
 
 </head>
 <body class="p-3 m-0 border-0 bd-example">
@@ -125,6 +137,10 @@
           </section>
           <hr>
         </main>
+        <section id="map" class="row">
+          <!-- in de apMap zal er via Leaflet een map ingeladen worden -->
+          <div id="DisneyMap" class="col-12 mb-3"></div>
+        </section>
       </div>
     </div>
     <footer class="container-fluid text-center h6 small p-4"><img src="./images/redlightsaber.jpg" alt="Rode Lightsaber" width="80" height="50">MAY THE FORCE BE WITH YOU
